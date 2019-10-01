@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#header .co {
+    background: #fff;
+}
+#header .navbar {
+    background: #fff;
+    border: none;
+    margin: 0;
+}
+#header .navbar-header {
+    height: 50px;
+}
+#header .navbar-header img {
+    padding-top: 15px;
+    float: left;
+}  
+#header .navbar-toggle {
+    float: left;
+    border: none;
+    color: #000;
+    margin: 10px 20px 10px 0;
+    background-color: transparent;
+}
+#header .navbar-toggle span {
+    height: 4.5px;
+    width: 30px;
+}
+#header .navbar-toggle:hover {
+    background: rgb(247, 245, 245);
+}
+#menu {
+    padding-top: 10px;
+}
+#menu .nav a {
+    color: #000;
+    font-size: 16px;
+}
+#menu .nav a:hover {
+    color: #0000ff;
+}
+#menu .dropdown {
+    position: relative;
+}
+#menu .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    padding: 8px;
+}
+#menu .dropdown:hover .dropdown-menu {
+    display: block;
+}
+#menu .btn {
+    background: #0000ff;
+    border: none;
+    margin-right: 12px; 
+    margin-left: 10px;
+}
+#menu .btn:hover {
+    background: #ffd000;
+}
+#menu .nav a.btn {
+    color: #fff;
+}
+#menu .nav a.btn:hover {
+    color: #000;
+}
+#content {
+    background: #f8f8f8; 
+}
+#content .asd {
+    margin-top: 70px;
+    background: #0000ff;
+    color: #fff;
+    padding: 7px;
+}
+#content .wcs {
+    margin-top: 70px;
+    text-align: center;
+    padding-top: 60px;
+    line-height: 2;
+}
+#content .wcs span {
+    width: 120px;
+    background: #a7a7a7;
+    display: block;
+    height: 2px;
+    margin: auto;
+}
+#content .wcs em {
+    width: 60px;
+    background-color: #004dda;
+    display: block;
+    height: 2px;
+    margin: auto;
+}
+#content .wcs h2 {
+    margin-top: 40px;
+    font-weight: 300;
+}
+#content .main {
+    margin: 40px 0;
+}
+#content .row {
+    margin-bottom: 5px;
+}
+#content a.box {
+    background: #fff;
+    padding: 50px 60px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(77, 77, 77);
+}
+#content a.box:hover {
+    color: salmon;
+    cursor: pointer;
+}
+#content .origin {
+    background: #fff;
+    margin-top: 70px;
+    text-align: center;
+    padding: 60px 0;
+    line-height: 2;
+}
+#content .origin span {
+    width: 120px;
+    background: #a7a7a7;
+    display: block;
+    height: 2px;
+    margin: auto;
+}
+#content .origin em {
+    width: 60px;
+    background-color: #004dda;
+    display: block;
+    height: 2px;
+    margin: auto;
+}
+#content .origin h2 {
+    margin-top: 40px;
+    font-weight: 300;
+}
+#content .story {
+    margin-top: 60px;
+} 
+#content .story i {
+    float: left;
+    margin-top: 35px;
+}
+#content .founders {
+    margin-top: 70px;
+    text-align: center;
+    padding: 60px 0;
+    line-height: 2;
+}
+#content .of span {
+    width: 120px;
+    background: #a7a7a7;
+    display: block;
+    height: 2px;
+    margin: auto;
+}
+#content .of em {
+    width: 60px;
+    background-color: #004dda;
+    display: block;
+    height: 2px;
+    margin: auto;
+}
+#content .of h2 {
+    margin-top: 40px;
+    font-weight: 300;
+}
+#myCarousel .carousel-inner img {
+    margin: auto;
+}
+#myCarousel .ccc {
+    background: #004dda;
+}
+#footer {
+    background: white;
+    border-top: 1px solid #e1e1e1;
+}
+#footer .quiks {
+    padding-top: 11px;
+    margin-top: 55px;
+}
+#footer .quiks li {
+    line-height: 2;
+}
+#footer .quiks a {
+    text-decoration: none;
+    color: rgb(70, 70, 70);
+    line-height: 2;
+}
+#footer .kts form {
+    position: relative;
+}
+#footer .form-group input {
+    padding: 20px;
+    background: rgba(0,0,0,0.06);
+    border: none;
+    outline: none;
+}
+#footer .form-group a.btn {
+    background: #0000ff;  
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 10px, 20px;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+#footer .form-group a.btn:hover {
+    background: #ffd000;
+    color: #000;
+}
+#footer .fu {
+    margin-top: 30px;
+}
+#footer .lang {
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+#footer .lang hr {
+    border-color: #ddd;
+    margin-top: 16px;
+}
+#footer select {
+    padding: 7px;
+    border: none;
+    color: green;
+    background: rgb(248, 245, 245);
+    float: left;
+    margin-right: 25px;
+}
+#footer .vis img {
+    padding: 7px;
+    position: relative;
+}
+#footer .tac {
+    float: right;
+}
+#footer .tac a {
+    text-decoration: none;
+    color: rgb(136, 135, 135);
+}
+#footer .tac small {
+    color: rgb(136, 135, 135);
+    padding: 9px;
+}
