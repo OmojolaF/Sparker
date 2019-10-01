@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #faf9f9;
+    color: #555;
+}
+.btn {
+    border: none;
+    outline: none;
+    background: #0505e6;
+}
+.btn:hover {
+    background: #ffd000;
+}
+a.btn {
+    color: #fff;
+}
+a.btn:hover {
+    color: #000;
+}
+#header .co {
+    background: #fff;
+}
+#header .navbar {
+    background: #fff;
+    border: none;
+    margin: 0;
+}
+#header .navbar-header {
+    height: 50px;
+}
+#header .navbar-header img {
+    padding-top: 15px;
+    float: left;
+}  
+#header .navbar-toggle {
+    float: left;
+    border: none;
+    color: #000;
+    margin: 10px 20px 10px 0;
+    background-color: transparent;
+}
+#header .navbar-toggle span {
+    height: 4.5px;
+    width: 30px;
+}
+#header .navbar-toggle:hover {
+    background: rgb(247, 245, 245);
+}
+#menu {
+    padding-top: 10px;
+}
+#menu .nav a {
+    color: #000;
+    font-size: 16px;
+}
+#menu .nav a:hover {
+    color: #0000ff;
+}
+#menu .dropdown {
+    position: relative;
+}
+#menu .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    padding: 8px;
+}
+#menu .dropdown:hover .dropdown-menu {
+    display: block;
+}
+#menu .btn {
+    margin-right: 12px; 
+    margin-left: 10px;
+}
+#menu a.btn {
+    color: #fff;
+}
+#menu a.btn:hover {
+    color: #000;
+}
+#content .bg {
+    background-image: url("../images/hero_in_hotels_detail.jpg");
+    background-color: #0000ff;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    height: 550px;
+}
+#content .bg-content {
+    background-color: #00000033;
+    height: 100%;
+}
+#content .bg-content a.btn {
+    bottom: 25px;
+    left: 20px;
+    position: absolute;
+    background: #fff;
+    color: #444;
+}
+#content .bg-content a.btn:hover {
+    color: #0000ff;
+}
+#content .dr {
+    background: #0000ff;
+    padding: 20px 0;
+}
+#content .dr a {
+    text-decoration: none;
+    color: #ddddddc4;
+    font-size: 16px;
+}
+#content .dr a.active{
+    color: #fff;
+    margin-right: 15px;
+}
+#content .dr a:hover {
+    color: #fff;
+}
+#content .nih {
+    line-height: 1.7;
+    padding: 80px 0 40px 0;
+}
+#content h1.hm {
+    line-height: 0.4;
+}
+#content a.ad {
+    color: #999;
+    text-decoration: none;
+    font-size: 18px;
+}
+#content a.ad:hover {
+    color: #0000ff;
+}
+#content p.content {
+    margin: 30px 0;
+}
+#content .amen {
+    line-height: 1.8;
+    margin: 30px 0;
+}
+#content h3, h4 {
+    color: #333;
+} 
+#content .amens {
+    padding-left: 15px;
+    margin-top: 20px;
+}
+#content hr {
+    margin: 30px 0;
+    border-color: #d4d3d3fd;
+}
+#content .rr {
+    padding-bottom: 25px;
+    margin: 20px 0;
+}
+#content .srum ul {
+    columns: 2;
+    margin-top: 35px;
+}
+#content .srum li {    
+    margin-bottom: 10px;
+    width: 100%;
+}
+#content .srum img {
+    margin-right: 10px;
+    display: inline-block;
+}
+#content .prices tr.table-striped {
+    background: #0000000d;
+}
+#content .prices td {
+    padding: 15px;
+}
+#content .badge {
+    padding: 45px 0;
+    background: #32a067;  
+    border-radius: 4px; 
+    display: block;
+    margin-bottom: 25px;
+}
+#content .badge strong, em {
+    line-height: 1.9;
+    display: block;
+}
+#content .badge strong {
+    font-size: 50px;
+    line-height: normal;
+}
+#content .rivista {
+    margin-bottom: 30px;
+}
+#content .progress-bar {
+    background: #32a067;
+}
+#content .rivz img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+#content .talk {
+    background: #fff;
+    padding: 25px 25px;
+    border-radius: 4px; 
+    margin-bottom: 25px;
+}
+#content .lar label {
+    font-weight: normal;
+}
+#content .lar a.btn {
+    padding: 15px 30px;
+    margin-bottom: 60px;
+}
+#content aside .ascon {
+    box-shadow: 0px 0px 30px 0px #0000001a;
+    background: #fff;
+    padding: 20px 15px;
+}
+#footer {
+    background: white;
+    border-top: 1px solid #e1e1e1;
+}
+#footer .quiks {
+    padding-top: 11px;
+    margin-top: 55px;
+}
+#footer .quiks li {
+    line-height: 2;
+}
+#footer .quiks a {
+    text-decoration: none;
+    color: #464646;
+    line-height: 2;
+}
+#footer .quiks a:hover {
+    color: #0000ff;
+}
+#footer .kts form {
+    position: relative;
+}
+#footer .form-group input {
+    padding: 20px;
+    background: #0000000f;
+    border: none;
+    outline: none;
+    margin-bottom: 30px;
+}
+#footer .form-group a.btn {
+    padding: 10px, 20px;
+    color: #fff;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+#footer .form-group a.btn:hover {
+    color: #000;
+}
+#footer .lang {
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+#footer .lang hr {
+    border-color: #ddd;
+    margin-top: 16px;
+}
+#footer select {
+    padding: 7px;
+    border: none;
+    color: green;
+    background: #f8f5f5;
+    float: left;
+    margin-right: 25px;
+}
+#footer .vis img {
+    padding: 7px;
+    position: relative;
+}
+#footer .tac {
+    float: right;
+}
+#footer .tac a {
+    text-decoration: none;
+}
+#footer .tac small {
+    color: #888787;
+    padding: 0 9px;
+}

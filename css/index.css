@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    background-image: url("../images/bg_aside.svg");
+}
+#header .container-fluid {
+    background: #fff;
+    padding-bottom: 0;
+}
+#header .navbar {
+    background: #fff;
+    border: none;
+    margin: 0;
+}
+#header .navbar-header {
+    height: 50px;
+}
+#header .navbar-header img {
+    padding-top: 15px;
+    float: left;
+}  
+#header .navbar-toggle {
+    float: left;
+    border: none;
+    color: #000;
+    margin: 10px 20px 10px 0;
+    background-color: transparent;
+}
+#header .navbar-toggle span {
+    height: 4.5px;
+    width: 30px;
+}
+#header .navbar-toggle:hover {
+    background: rgb(247, 245, 245);
+}
+#menu {
+    padding-top: 10px;
+}
+#menu .nav a {
+    color: #000;
+    font-size: 16px;
+}
+#menu .nav a:hover {
+    color: #0000ff;
+}
+#menu .dropdown {
+    position: relative;
+}
+#menu .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    padding: 8px;
+}
+#menu .dropdown:hover .dropdown-menu {
+    display: block;
+}
+#menu .btn {
+    background: #0000ff;
+    border: none;
+    margin-right: 12px; 
+    margin-left: 10px;
+}
+#menu .btn:hover {
+    background: #ffd000;
+}
+#menu .nav a.btn {
+    color: #fff;
+}
+#menu .nav a.btn:hover {
+    color: #000;
+}
+#content .bg {
+    background-image: url("../images/home_section_1.jpg");
+    background-color: #0000ff;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+    height: 650px;
+}
+#content .bg-content {
+    background-color: rgba(0,0,0,0.6);
+    padding: 40px 0;
+    height: 100%;
+}
+#content .container {
+    text-align: center;
+    margin-bottom: 50px;
+}
+#content .container h2 {
+    margin-top: 140px;
+    font-weight: bolder;
+}
+#content .container p {
+    line-height: 30px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+#content .form-group {
+    border-radius: 2px;
+    border: none;
+    margin-top: 7px;
+}
+#content .form-group input {
+    padding: 25px 30px 25px 10px;    
+}
+#content .form-group select {
+    padding: 25px 30px 25px 10px;
+}
+#content .btn {
+    background: #0000ff;
+    border: none;
+    width: 100%;
+    margin-top: 7px;
+    border-radius: 8px;
+    padding: 15px 0;
+}
+#content .btn:hover {
+    background: #ffd000;
+}
+#content .s a.btn {
+    color: #fff;
+}
+#content .s a.btn:hover {
+    color: #000;
+}
+#content .contcon {
+    text-align: start;
+    text-decoration: none;
+    margin-top: 200px;
+}
+#content .totori {
+    position: relative;
+    border-left: 2px solid #e1e1e1;
+    padding-left: 15px;
+    margin-top: -100px;
+}
+#content .totori h2 {
+    line-height: 0.8;
+}
+#content .totori p {
+    line-height: 1.4;
+}
+#content .totori span {
+    height: 30px;
+    width: 2px;
+    background-color: #004dda;
+    position: absolute;
+    left: -2px;
+}
+#content .totori a {
+    text-decoration: none;
+    color: #004dda;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+#content .totori a:hover {
+    color: #000;
+}
+#content .pics img {
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;  
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+#content .pics a .info {
+    position: absolute;
+    z-index: 9;
+    display: block;
+    color: #fff;
+    left: 0;
+    bottom: 0;
+    padding: 10px 20px;
+}
+#content .ph {
+    margin-top: 1px;
+}
+#content .hiw {
+    background-color: #5151e9;
+}
+#content .hiw2 {
+    margin-top: 100px;
+    padding-bottom: 20px; 
+    color: #fff;
+}
+#content .hiw2 span {
+    width: 150px;
+    height: 2px;
+    background: #a7a7a7;
+    display: block;
+    margin: auto;
+}
+#content .hiw2 em {
+    width: 50px;
+    height: 2px;
+    background-color: #004dda;
+    display: block;
+    margin: auto;
+}
+#content .hiw2 h3 {
+    margin-top: 50px;
+    line-height: 0.4; 
+}
+#content .hiw2 h5 {
+    margin-top: 45px;
+    line-height: 0.4; 
+}
+#content .hiw2 a {
+    color: #fff;
+    width: 200px;
+    text-align: center;
+    background: #004dda;
+    outline: none;
+    border-radius: 50px;
+    padding: 15px 30px;
+    margin: 25px;
+}
+#content .hiw2 a:hover {
+    color: #000;
+}
+#content .saa {
+    margin-top: 100px;
+    padding-bottom: 20px;
+}
+#content .saa span {
+    width: 150px;
+    height: 2px;
+    background: #a7a7a7;
+    display: block;
+    margin: auto;
+}
+#content .saa em {
+    width: 50px;
+    height: 2px;
+    background-color: #004dda;
+    display: block;
+    margin: auto;
+}
+#content .saa h2 {
+    font-weight: normal;
+    margin-top: 30px;
+}
+#content .saa p {
+    text-align: center;
+}
+#content .aps {
+    margin-top: 40px;
+    padding: 15px;
+}
+#content .aps img {
+    margin: 0 8px;
+}
+#footer {
+    background: white;
+    border-top: 1px solid #e1e1e1;
+}
+#footer .quiks {
+    padding-top: 11px;
+    margin-top: 55px;
+}
+#footer .quiks li {
+    line-height: 2;
+}
+#footer .quiks a {
+    text-decoration: none;
+    color: rgb(70, 70, 70);
+    line-height: 2;
+}
+#footer .kts form {
+    position: relative;
+}
+#footer .form-group input {
+    padding: 20px;
+    background: rgba(0,0,0,0.06);
+    border: none;
+    outline: none;
+}
+#footer .form-group a.btn {
+    background: #0000ff;  
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 10px, 20px;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+#footer .form-group a.btn:hover {
+    background: #ffd000;
+    color: #000;
+}
+#footer .fu {
+    margin-top: 30px;
+}
+#footer .lang {
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+#footer .lang hr {
+    border-color: #ddd;
+    margin-top: 16px;
+}
+#footer select {
+    padding: 7px;
+    border: none;
+    color: green;
+    background: rgb(248, 245, 245);
+    float: left;
+    margin-right: 25px;
+}
+#footer .vis img {
+    padding: 7px;
+    position: relative;
+}
+#footer .tac {
+    float: right;
+}
+#footer .tac a {
+    text-decoration: none;
+    color: rgb(136, 135, 135);
+}
+#footer .tac small {
+    color: rgb(136, 135, 135);
+    padding: 9px;
+}
