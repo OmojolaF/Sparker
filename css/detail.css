@@ -6,10 +6,13 @@ body {
     background: #faf9f9;
     color: #555;
 }
+svg {
+    margin-right: 7px;
+}
 .btn {
     border: none;
     outline: none;
-    background: #0505e6;
+    background: #004dda;
 }
 .btn:hover {
     background: #ffd000;
@@ -124,6 +127,10 @@ a.btn:hover {
     line-height: 1.7;
     padding: 80px 0 40px 0;
 }
+#content .nih svg.fa-star {
+    color: #ffc107;
+    margin-right: 2px;
+}
 #content h1.hm {
     line-height: 0.4;
 }
@@ -190,6 +197,9 @@ a.btn:hover {
     font-size: 50px;
     line-height: normal;
 }
+#reviews {
+    padding-top: 10px;
+}
 #content .rivista {
     margin-bottom: 30px;
 }
@@ -217,11 +227,108 @@ a.btn:hover {
 #content aside .ascon {
     box-shadow: 0px 0px 30px 0px #0000001a;
     background: #fff;
-    padding: 20px 15px;
+    padding: 25px 25px 15px 25px;
+    margin-bottom: 35px;
+}
+#content aside .ascon1 {
+    border-bottom: 1px solid #ededed;
+    margin: 0 -25px 25px -25px;
+    padding: 0 25px 15px 25px;
+}
+#content aside .price {
+    font-weight: 600;
+    font-size: 31px;
+}
+#content aside .price sub {
+    font-weight: 500;
+    font-size: initial;
+    margin-left: 6px;
+}
+#content aside .grade {
+    float: right;
+    margin-top: -40px;
+}
+#content aside .grade span {
+    display: inline-block;
+    margin-right: 8px;
+    font-size: 1rem;
+    text-align: right;
+    line-height: 1;
+}
+#content aside .grade strong {
+    background-color: #32a067;
+    color: #fff; 
+    line-height: 1;
+    border-radius: 5px 5px 5px 0;
+    padding: 10px;
+}
+#content aside .tilapia {
+    margin-bottom: 40px;
+}
+#content aside .rmtp select {
+    width: 100%;
+    padding: 10px 5px;
+    background: #fff;
+    border: 1px solid #ccc;
+    outline: none;
+    font-weight: 600;
+}
+#content aside a {
+    padding: 12px 30px;
+    width: 100%;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+#content aside .poshaz a:hover {
+    background:  #32a067;
+    color: #fff;
+}
+#content aside .atwic a {
+    background: none;
+    border: 2px solid #555;
+    color: #222;
+}
+#content aside .atwic a:hover {
+    background: #555;
+    color: #fff;
+}
+#content aside .sts a {
+    background: #fff;
+    border-radius: 50px;
+    border: #666 1px solid;
+    padding: 7px 20px;
+    font-weight: 500;
+}
+#content aside .sts a.fb {
+    color: #3b5998;
+    border-color: #3b5998;
+}
+#content aside .sts a.fb:hover {
+    background: #3b5998;
+    color: #fff;
+}
+#content aside .sts a.tw {
+    border-color: #1da1f2;
+    color: #1da1f2;
+}
+#content aside .sts a.tw:hover {
+    background: #1da1f2;
+    color: #fff;
+}
+#content aside .sts a.gg {
+    border-color: #dd4b39;
+    color: #dd4b39;
+}
+#content aside .sts a.gg:hover{
+    background: #dd4b39;
+    color: #fff;
 }
 #footer {
     background: white;
     border-top: 1px solid #e1e1e1;
+}
+#footer svg.fa-home, .fa-headphones-alt, .fa-info {
+    color: #004dda;
 }
 #footer .quiks {
     padding-top: 11px;
@@ -229,6 +336,10 @@ a.btn:hover {
 }
 #footer .quiks li {
     line-height: 2;
+}
+#footer .quiks li:hover {
+    transition: all 0.5s ease-in-out;
+    transform: translateX(5px);
 }
 #footer .quiks a {
     text-decoration: none;
@@ -240,6 +351,9 @@ a.btn:hover {
 }
 #footer .kts form {
     position: relative;
+}
+#footer .fu a {
+    padding: 10px 15px 10px 0;
 }
 #footer .form-group input {
     padding: 20px;
@@ -287,4 +401,30 @@ a.btn:hover {
 #footer .tac small {
     color: #888787;
     padding: 0 9px;
+}
+#totop {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 9999;
+    width: 46px;
+    height: 46px;
+    background-color: #00000099;
+    opacity: 1;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 21px;
+    color: #fff;
+    cursor: pointer;
+}
+#totop:hover {
+    background: #004dda;
+}
+#totop::after {
+    content: "\e899";
+    font-family: "fontello";
+    position: relative;
+    display: block;
+    top: 50%;
+    transform: translateY(-55%);
 }

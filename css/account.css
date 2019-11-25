@@ -2,8 +2,28 @@
     margin: 0;
     padding: 0;
 }
+body {
+    background: #f8f8f8;
+    line-height: 1.6;
+    font-family: "Poppins",Helvetica,sans-serif;
+    color: #555;
+}
 svg {
     margin-right: 7px;
+}
+.btn {
+    border: none;
+    outline: none;
+    background: #004dda;
+}
+.btn:hover {
+    background: #ffd000;
+}
+a.btn {
+    color: #fff;
+}
+a.btn:hover {
+    color: #000;
 }
 #header .co {
     background: #fff;
@@ -32,7 +52,7 @@ svg {
     width: 30px;
 }
 #header .navbar-toggle:hover {
-    background: rgb(247, 245, 245);
+    background: #f7f5f5;
 }
 #menu {
     padding-top: 10px;
@@ -57,146 +77,23 @@ svg {
     display: block;
 }
 #menu .btn {
-    background: #004dda;
-    border: none;
     margin-right: 12px; 
     margin-left: 10px;
 }
-#menu .btn:hover {
-    background: #ffd000;
-}
-#menu .nav a.btn {
+#menu a.btn {
     color: #fff;
 }
-#menu .nav a.btn:hover {
+#menu a.btn:hover {
     color: #000;
 }
-#content {
-    background: #f8f8f8; 
-}
-#content .asd {
-    margin-top: 70px;
+#content .result {
+    margin: 50px 0 40px 0;
     background: #004dda;
     color: #fff;
-    padding: 7px 7px 20px 7px;
+    padding: 10px 0;
 }
-#content .wcs {
-    margin-top: 70px;
-    text-align: center;
-    padding-top: 60px;
-    line-height: 2;
-}
-#content .wcs span {
-    width: 120px;
-    background: #a7a7a7;
-    display: block;
-    height: 2px;
-    margin: auto;
-}
-#content .wcs em {
-    width: 60px;
-    background-color: #004dda;
-    display: block;
-    height: 2px;
-    margin: auto;
-}
-#content .wcs h2 {
-    margin-top: 40px;
-    font-weight: 300;
-}
-#content .main {
-    margin: 40px 0;
-}
-#content .row {
-    margin-bottom: 5px;
-}
-#content a.box {
-    background: #fff;
-    padding: 40px 50px;
-    display: block;
-    height: 280px;
-    margin-bottom: 30px;
-    border-radius: 4px;
-    box-shadow: 0px 3px 0px 0px #f0f2f4;
-    text-align: center;
-    text-decoration: none;
-    color: #555;
-}
-#content a.box:hover {
-    color: salmon;
-    transform: translateY(-15px);
-    transition: all 0.5s ease-in-out;
-    cursor: pointer;
-    border: 1px dashed red;
-}
-#content a.box svg {
-    color: #32a067;
-}
-#content .origin {
-    background: #fff;
-    margin-top: 70px;
-    text-align: center;
-    padding: 60px 0;
-    line-height: 2;
-}
-#content .origin span {
-    width: 120px;
-    background: #a7a7a7;
-    display: block;
-    height: 2px;
-    margin: auto;
-}
-#content .origin em {
-    width: 60px;
-    background-color: #004dda;
-    display: block;
-    height: 2px;
-    margin: auto;
-}
-#content .origin h2 {
-    margin-top: 40px;
-    font-weight: 300;
-}
-#content .story {
-    margin-top: 60px;
-    text-align: left;
-} 
-#content .story img {
-    margin-bottom: 50px;
-}
-#content .story i {
-    float: left;
-    margin-top: 35px;
-}
-#content .founders {
-    margin-top: 70px;
-    text-align: center;
-    padding: 60px 0;
-    line-height: 2;
-}
-#content .of span {
-    width: 120px;
-    background: #a7a7a7;
-    display: block;
-    height: 2px;
-    margin: auto;
-}
-#content .of em {
-    width: 60px;
-    background-color: #004dda;
-    display: block;
-    height: 2px;
-    margin: auto;
-}
-#content .of h2 {
-    margin-top: 40px;
-    font-weight: 300;
-}
-#myCarousel .carousel-inner img {
-    margin: auto;
-}
-#myCarousel .ccc {
-    background: #004dda;
+#content .result h1 {
+    font-size: 28px;
 }
 #footer {
     background: white;
@@ -232,23 +129,17 @@ svg {
     background: #0000000f;
     border: none;
     outline: none;
+    margin-bottom: 30px;
 }
 #footer .form-group a.btn {
-    background: #004dda; 
-    border: none;
-    outline: none;
-    color: #fff;
     padding: 10px, 20px;
+    color: #fff;
     top: 0;
     right: 0;
     position: absolute;
 }
 #footer .form-group a.btn:hover {
-    background: #ffd000;
     color: #000;
-}
-#footer .fu {
-    margin-top: 30px;
 }
 #footer .lang {
     margin: 0 auto;
@@ -262,9 +153,9 @@ svg {
     padding: 7px;
     border: none;
     color: green;
-    background: rgb(248, 245, 245);
+    background: #f8f5f5;
     float: left;
-    margin-right: 25px;
+    margin-right: 10px;
 }
 #footer .vis img {
     padding: 7px;
@@ -275,11 +166,14 @@ svg {
 }
 #footer .tac a {
     text-decoration: none;
-    color: rgb(136, 135, 135);
+    color: #888787;
+}
+#footer .tac a:hover {
+    color: #000;
 }
 #footer .tac small {
-    color: rgb(136, 135, 135);
-    padding: 9px;
+    color: #888787;
+    padding: 0 9px;
 }
 #totop {
     position: fixed;

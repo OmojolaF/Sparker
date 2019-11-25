@@ -10,6 +10,13 @@ body {
     position: relative;
     background-image: url("../images/bg_aside.svg");
 }
+svg {
+    margin-right: 7px;
+}
+svg.fa-star {
+    color: #ffd000;
+    margin: 0 -2px -5px 0;
+}
 #header .container-fluid {
     background: #fff;
     padding-bottom: 0;
@@ -38,13 +45,16 @@ body {
     width: 30px;
 }
 #header .navbar-toggle:hover {
-    background: rgb(247, 245, 245);
+    background: #f7f5f5;
 }
 #menu {
     padding-top: 10px;
 }
+.nav {
+    color: #fff;
+}
 #menu .nav a {
-    color: #000;
+    color: currentColor;
     font-size: 16px;
 }
 #menu .nav a:hover {
@@ -63,7 +73,7 @@ body {
     display: block;
 }
 #menu .btn {
-    background: #0000ff;
+    background: #004dda;
     border: none;
     margin-right: 12px; 
     margin-left: 10px;
@@ -117,7 +127,7 @@ body {
     padding: 25px 30px 25px 10px;
 }
 #content .btn {
-    background: #0000ff;
+    background: #004dda;
     border: none;
     width: 100%;
     margin-top: 7px;
@@ -149,6 +159,7 @@ body {
 }
 #content .totori p {
     line-height: 1.4;
+    margin-right: 30px;
 }
 #content .totori span {
     height: 30px;
@@ -167,16 +178,30 @@ body {
 #content .totori a:hover {
     color: #000;
 }
-#content .pics img {
-    background-color: rgba(0,0,0,0.6);
-    width: 100%;  
-    margin-bottom: 20px;
+#content .pics figure {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 20px; 
     border-radius: 6px;
+}
+#content .pics a figure img {
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    border-radius: 6px;
+}
+#content .pics a:hover figure img {
+    transform: translate(-50%, -50%) scale(1.1);
 }
 #content .pics a .info {
     position: absolute;
-    z-index: 9;
-    display: block;
+    background: linear-gradient(to bottom, transparent, #000);
+    width: 100%;
     color: #fff;
     left: 0;
     bottom: 0;
@@ -207,13 +232,13 @@ body {
     display: block;
     margin: auto;
 }
-#content .hiw2 h3 {
+#content .hiw2 h2, h4 {
     margin-top: 50px;
     line-height: 0.4; 
+    font-weight: 600;
 }
-#content .hiw2 h5 {
-    margin-top: 45px;
-    line-height: 0.4; 
+#content .hiw2 svg {
+    color: #FFC107;
 }
 #content .hiw2 a {
     color: #fff;
@@ -264,6 +289,9 @@ body {
     background: white;
     border-top: 1px solid #e1e1e1;
 }
+#footer svg.fa-home, .fa-headphones-alt, .fa-info {
+    color: #004dda;
+}
 #footer .quiks {
     padding-top: 11px;
     margin-top: 55px;
@@ -271,22 +299,30 @@ body {
 #footer .quiks li {
     line-height: 2;
 }
+#footer .quiks li:hover {
+    transition: all 0.5s ease-in-out;
+    transform: translateX(5px);
+}
 #footer .quiks a {
     text-decoration: none;
-    color: rgb(70, 70, 70);
+    color: #464646;
     line-height: 2;
+}
+#footer .quiks a:hover {
+    color: #0000ff;
+    /* content: &#x24; */
 }
 #footer .kts form {
     position: relative;
 }
 #footer .form-group input {
     padding: 20px;
-    background: rgba(0,0,0,0.06);
+    background: #0000000f;
     border: none;
     outline: none;
 }
 #footer .form-group a.btn {
-    background: #0000ff;  
+    background: #004dda;  
     border: none;
     outline: none;
     color: #fff;
@@ -314,7 +350,7 @@ body {
     padding: 7px;
     border: none;
     color: green;
-    background: rgb(248, 245, 245);
+    background: #f8f5f5;
     float: left;
     margin-right: 25px;
 }
@@ -327,9 +363,35 @@ body {
 }
 #footer .tac a {
     text-decoration: none;
-    color: rgb(136, 135, 135);
+    color: #888787;
 }
 #footer .tac small {
-    color: rgb(136, 135, 135);
+    color: #888787;
     padding: 9px;
+}
+#totop {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 9999;
+    width: 46px;
+    height: 46px;
+    background-color: #00000099;
+    opacity: 1;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 21px;
+    color: #fff;
+    cursor: pointer;
+}
+#totop:hover {
+    background: #004dda;
+}
+#totop::after {
+    content: "\e899";
+    font-family: "fontello";
+    position: relative;
+    display: block;
+    top: 50%;
+    transform: translateY(-55%);
 }

@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width initial-scale=1">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/detail.css">
+    <script src="../fontawesome/js/all.js"></script>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/detail.js"></script>
 </head>
 <body>
     <div id="header">
@@ -23,18 +25,20 @@
                             <img class="img-responsive" src="./images/logo_sticky.svg"/>
                         </a>
                     </div>
-                       <div id="menu" class="collapse navbar-collapse navbar-menu">
+                    <div id="menu" class="collapse navbar-collapse navbar-menu">
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="dropdown"><a class="dropdown-toggle" href="index.html">Home</a>
+                            <li><a href="index.html">Home</a>
                             </li>
-                            <li class="dropdown"><a class="dropdown-toggle" href="detail.html">Details</a>
+                            <li><a href="detail.html">Details</a>
                             </li>
-
-                            <li class="dropdown"><a class="dropdown-toggle" href="about.html">About</a>
+                            <li><a href="about.html">About</a>
                             </li>
-
                             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Extras</a>
                                 <ul class="dropdown-menu dropdown-menu-left" role="menu" aria-labelledby="menu1">
+                                    <li role="presentation"><a role="menuitem" href="checkout.html">Checkout</a></li>
+                                    <li role="presentation"><a role="menuitem" href="row_listing.html">Row Listing</a></li>
+                                    <li role="presentation"><a role="menuitem" href="blog.html">Blog</a></li>
+                                    <li role="presentation"><a role="menuitem" href="account.html">Account</a></li>
                                     <li role="presentation"><a role="menuitem" href="#">404 page</a></li>
                                 </ul>
                             </li>
@@ -45,7 +49,7 @@
                                 <strong>Add Listing</strong>
                             </a>
                         </ul>               
-                </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -60,308 +64,353 @@
         </div>
         <div class="dr">
             <div class="container">
-                <a href="#" class="active">Description</a>
-                <a href="#">Reviews</a>
+                <a href="#description" class="active">Description</a>
+                <a href="#reviews">Reviews</a>
             </div>
         </div>
         <div class="container">
-            <div class="row nih">
-                <div class="col-sm-8">
-                    &bigstar;&bigstar;&bigstar;&bigstar;
-                    <p><h1 class="hm">Hotel Mariott</h1>
-                        <p><a class="ad" href="#">
-                            <small>438 Rush Green Road, Romford</small>
-                        </a></p>
-                    </p>                    
-                    <p class="content">
-                        Per consequat adolescens ex, cu nibh commune <strong>temporibus vim</strong>, 
-                        ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam 
-                        ei quas oportere democritum. Prima causae admodum id est, ei timeam inimicus 
-                        sed. Sit an meis aliquam, cetero inermis vel ut. An sit illum euismod facilisis,
-                        tamquam vulputate pertinacia eum at.
-                        <p>
-                            Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed 
-                            ut sint <strong>blandit</strong> efficiendi. Atomorum explicari eu qui, est enim quaerendum te.
-                            Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune.
+            <section id="description">
+                <div class="row nih">
+                    <div class="col-sm-8">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <p><h1 class="hm">Hotel Mariott</h1>
+                            <p><a class="ad" href="#">
+                                <i class="fa fa-compass"></i><small>438 Rush Green Road, Romford</small>
+                            </a></p>
+                        </p>                    
+                        <p class="content">
+                            Per consequat adolescens ex, cu nibh commune <strong>temporibus vim</strong>, 
+                            ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam 
+                            ei quas oportere democritum. Prima causae admodum id est, ei timeam inimicus 
+                            sed. Sit an meis aliquam, cetero inermis vel ut. An sit illum euismod facilisis,
+                            tamquam vulputate pertinacia eum at.
+                            <p>
+                                Cum et probo menandri. Officiis consulatu pro et, ne sea sale invidunt, sed 
+                                ut sint <strong>blandit</strong> efficiendi. Atomorum explicari eu qui, est enim quaerendum te.
+                                Quo harum viris id. Per ne quando dolore evertitur, pro ad cibo commune.
+                            </p>
                         </p>
-                    </p>
-                    <div class="amen">
-                        <h3>Amenities</h3>
-                        <div class="row amens">
-                            <div class="col-sm-6">
-                                <ul class="bullets">
-                                    <li>Dolorem mediocritatem</li>
-                                    <li>Mea appareat</li>
-                                    <li>Prima causae</li>
-                                    <li>Singulis indoctum</li>
-                                </ul>
-                            </div>
-                            <div class="col-sm-6">
-                                <ul class="bullets">
-                                    <li>Timeam inimicus</li>
-                                    <li>Oportere democritum</li>
-                                    <li>Cetero inermis</li>
-                                    <li>Pertinacia eum</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row rr">
-                        <div class="col-sm-4">
-                            <img class="img-responsive" src="./images/gallery/hotel_list_1.jpg">
-                        </div>
-                        <div class="col-sm-8 srum">
-                            <h4>Single Room</h4>
-                            <p>Sit an meis aliquam, cetero inermis vel ut. An sit illum euismod facilisis,
-                                tamquam vulputate pertinacia eum at.</p>
-                            <ul class="list-unstyled">    
-                                <li><img class="img-responsive" src="./images/hotel_facilites_icon_2.svg"> Single Bed</li>
-                                <li><img class="img-responsive" src="./images/hotel_facilites_icon_4.svg"> Free Wifi</li>
-                                <li><img class="img-responsive" src="./images/hotel_facilites_icon_5.svg"> Shower</li>
-                                <li><img class="img-responsive" src="./images/hotel_facilites_icon_7.svg"> Air Condition</li>
-                                <li><img class="img-responsive" src="./images/hotel_facilites_icon_8.svg"> Hairdryer</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row rr">
-                        <div class="col-sm-4">
-                            <img class="img-responsive" src="./images/gallery/hotel_list_2.jpg">
-                        </div>
-                        <div class="col-sm-8 srum">
-                            <h4>Double Room</h4>
-                            <p>Sit an meis aliquam, cetero inermis vel ut. An sit illum euismod facilisis,
-                                tamquam vulputate pertinacia eum at.</p>
-                            <ul class="list-unstyled">    
-                                <li><img class="img-responsive" src="./images/hotel_facilites_icon_3.svg"> Double Bed</li>
-                                <li><img class="img-responsive" src="./images/hotel_facilites_icon_4.svg"> Free Wifi</li>
-                                <li><img class="img-responsive" src="./images/hotel_facilites_icon_6.svg"> Bathtub</li>
-                                <li><img class="img-responsive" src="./images/hotel_facilites_icon_7.svg"> Air Condition</li>
-                                <li><img class="img-responsive" src="./images/hotel_facilites_icon_8.svg"> Hairdryer</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row rr">
-                        <div class="col-sm-4">
-                            <img class="img-responsive" src="./images/gallery/hotel_list_3.jpg">
-                        </div>
-                        <div class="col-sm-8 srum">
-                            <h4>Suite Room</h4>
-                            <p>Sit an meis aliquam, cetero inermis vel ut. An sit illum euismod facilisis,
-                                tamquam vulputate pertinacia eum at.</p>
-                            <ul class="list-unstyled">    
-                                <li><img class="img-responsive" src="./images/hotel_facilites_icon_3.svg"> King Size Bed</li>
-                                <li><img class="img-responsive" src="./images/hotel_facilites_icon_4.svg"> Free Wifi</li>
-                                <li><img class="img-responsive" src="./images/hotel_facilites_icon_6.svg"> Bathtub</li>
-                                <li><img class="img-responsive" src="./images/hotel_facilites_icon_7.svg"> Air Condition</li>
-                                <li><img class="img-responsive" src="./images/hotel_facilites_icon_9.svg"> Swimming Pool</li>
-                                <li><img class="img-responsive" src="./images/hotel_facilites_icon_8.svg"> Hairdryer</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="prices">
-                        <h3>Prices</h3>
-                        <div class="table-responsive">
-                            <table class="table">
-                                <tbody>
-                                    <tr class="table-striped">
-                                        <td>Low (from 23/03 to 31/05)</td>
-                                        <td>140$</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Middle (from 23/03 to 31/05)</td>
-                                        <td>180$</td>
-                                    </tr>
-                                    <tr class="table-striped">
-                                        <td>High (from 23/03 to 31/05)</td>
-                                        <td>200$</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="loc">
-                        <h3>Location</h3>
-                    </div>
-                    <hr>
-                    <div class="rivz">
-                        <h3>Reviews</h3>
-                        <div class="row rivista">
-                            <div class="col-sm-3">
-                                <div class="badge">
-                                    <strong>8.5</strong>
-                                    <em>Superb</em>
-                                    <small>Based on 4 reviews</small>
+                        <div class="amen">
+                            <h3>Amenities</h3>
+                            <div class="row amens">
+                                <div class="col-sm-6">
+                                    <ul class="bullets">
+                                        <li>Dolorem mediocritatem</li>
+                                        <li>Mea appareat</li>
+                                        <li>Prima causae</li>
+                                        <li>Singulis indoctum</li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6">
+                                    <ul class="bullets">
+                                        <li>Timeam inimicus</li>
+                                        <li>Oportere democritum</li>
+                                        <li>Cetero inermis</li>
+                                        <li>Pertinacia eum</li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="col-sm-9">
-                                <div class="row rivista">
-                                    <div class="col-xs-10">
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-success"
-                                                aria-valuemin="0" aria-valuemax="100" style="width:80%">  
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-2">
-                                        <small><strong>5 stars</strong></small>
-                                    </div>
-                                    <div class="col-xs-10">
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-success"
-                                                aria-valuemin="0" aria-valuemax="100" style="width:90%">  
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-2">
-                                        <small><b>4 stars</b></small>
-                                    </div>
-                                    <div class="col-xs-10">
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-success"
-                                                aria-valuemin="0" aria-valuemax="100" style="width:60%">  
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-2">
-                                        <small><b>3 stars</b></small>
-                                    </div>
-                                    <div class="col-xs-10">
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-success"
-                                                aria-valuemin="0" aria-valuemax="100" style="width:30%">  
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-2">
-                                        <small><b>2 stars</b></small>
-                                    </div>
-                                    <div class="col-xs-10">
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-success"
-                                                aria-valuemin="0" aria-valuemax="100" style="width:0%">  
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-2">
-                                        <small><b>1 stars</b></small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-2">
-                                <img class="img-responsive" src="./images/avatar1.jpg">
-                            </div>
-                            <div class="col-sm-10 talk">
-                                &bigstar;&bigstar;&bigstar;&bigstar;&bigstar;
-                                <p><em>Admin – April 03, 2016:</em></p>
-                                <p>Sed eget turpis a pede tempor malesuada. Vivamus quis mi at leo pulvinar hendrerit.
-                                Cum sociis natoque penatibus et magnis dis</p>
-                            </div>
-                            <div class="col-sm-2">
-                                <img class="img-responsive" src="./images/avatar2.jpg">
-                            </div>
-                            <div class="col-sm-10 talk">
-                                &bigstar;&bigstar;&bigstar;&bigstar;&bigstar;
-                                <p><em>Ahsan – April 01, 2016:</em></p>
-                                <p>Sed eget turpis a pede tempor malesuada. Vivamus quis mi at leo pulvinar hendrerit.
-                                Cum sociis natoque penatibus et magnis dis</p>
-                            </div>
-                            <div class="col-sm-2">
-                                <img class="img-responsive" src="./images/avatar3.jpg">
-                            </div>
-                            <div class="col-sm-10 talk">
-                                &bigstar;&bigstar;&bigstar;&bigstar;&bigstar;
-                                <p><em>Sara – March 31, 2016:</em></p>
-                                <p>Sed eget turpis a pede tempor malesuada. Vivamus quis mi at leo pulvinar hendrerit.
-                                Cum sociis natoque penatibus et magnis dis</p>
-                            </div>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="lar">
-                        <h3>Leave a Review</h3>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <form role="form">
-                                    <div class="form-group">
-                                        <label>Name and Lastname *</label>
-                                        <input type="text" class="form-control input-lg">
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="col-sm-6">
-                                <form role="form">
-                                    <div class="form-group">
-                                        <label for="email">Email *</label>
-                                        <input type="email" class="form-control input-lg">
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="col-sm-6">
-                                <form role="form">
-                                    <div class="form-group">
-                                        <label>Rating</label>
-                                        <select class="form-control input-lg">
-                                            <option>1 (lowest)</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option selected>5 (medium)</option>
-                                            <option>6</option>
-                                            <option>7</option>
-                                            <option>8</option>
-                                            <option>9</option>
-                                            <option>10 (highest)</option>
-                                        </select>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="col-sm-12">
-                                <form role="form">
-                                    <div class="form-group">
-                                        <label>Your Review</label>
-                                        <textarea class="form-control" rows="6"></textarea>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="col-sm-12">
-                                <a class="btn" href="#">
-                                    <strong>Submit</strong>
-                                </a>
-                            </div>
-                        </div>
-                    </div>    
-                </div>
-                <aside class="col-sm-4">
-                    <div class="ascon">
-                        <div class="ascon1">
-                            <ul class="list-unstyled">
-                                <li><strong>45&dollar;</strong><sub> person</sub></li>
-                                <li class="grade">
-                                    Good<em> 350 views</em>
-                                    <span class="badge">7.0</span>
-                                </li>
-                            </ul>
                         </div>
                         <hr>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="When..">
+                        <div class="row rr">
+                            <div class="col-sm-4">
+                                <img class="img-responsive" src="./images/gallery/hotel_list_1.jpg">
+                            </div>
+                            <div class="col-sm-8 srum">
+                                <h4>Single Room</h4>
+                                <p>Sit an meis aliquam, cetero inermis vel ut. An sit illum euismod facilisis,
+                                    tamquam vulputate pertinacia eum at.</p>
+                                <ul class="list-unstyled">    
+                                    <li><img class="img-responsive" src="./images/hotel_facilites_icon_2.svg"> Single Bed</li>
+                                    <li><img class="img-responsive" src="./images/hotel_facilites_icon_4.svg"> Free Wifi</li>
+                                    <li><img class="img-responsive" src="./images/hotel_facilites_icon_5.svg"> Shower</li>
+                                    <li><img class="img-responsive" src="./images/hotel_facilites_icon_7.svg"> Air Condition</li>
+                                    <li><img class="img-responsive" src="./images/hotel_facilites_icon_8.svg"> Hairdryer</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="panel-dropdown">
-                            
-                                Guests<span class="badge">1</span>
-                            
+                        <div class="row rr">
+                            <div class="col-sm-4">
+                                <img class="img-responsive" src="./images/gallery/hotel_list_2.jpg">
+                            </div>
+                            <div class="col-sm-8 srum">
+                                <h4>Double Room</h4>
+                                <p>Sit an meis aliquam, cetero inermis vel ut. An sit illum euismod facilisis,
+                                    tamquam vulputate pertinacia eum at.</p>
+                                <ul class="list-unstyled">    
+                                    <li><img class="img-responsive" src="./images/hotel_facilites_icon_3.svg"> Double Bed</li>
+                                    <li><img class="img-responsive" src="./images/hotel_facilites_icon_4.svg"> Free Wifi</li>
+                                    <li><img class="img-responsive" src="./images/hotel_facilites_icon_6.svg"> Bathtub</li>
+                                    <li><img class="img-responsive" src="./images/hotel_facilites_icon_7.svg"> Air Condition</li>
+                                    <li><img class="img-responsive" src="./images/hotel_facilites_icon_8.svg"> Hairdryer</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="When..">
+                        <div class="row rr">
+                            <div class="col-sm-4">
+                                <img class="img-responsive" src="./images/gallery/hotel_list_3.jpg">
+                            </div>
+                            <div class="col-sm-8 srum">
+                                <h4>Suite Room</h4>
+                                <p>Sit an meis aliquam, cetero inermis vel ut. An sit illum euismod facilisis,
+                                    tamquam vulputate pertinacia eum at.</p>
+                                <ul class="list-unstyled">    
+                                    <li><img class="img-responsive" src="./images/hotel_facilites_icon_3.svg"> King Size Bed</li>
+                                    <li><img class="img-responsive" src="./images/hotel_facilites_icon_4.svg"> Free Wifi</li>
+                                    <li><img class="img-responsive" src="./images/hotel_facilites_icon_6.svg"> Bathtub</li>
+                                    <li><img class="img-responsive" src="./images/hotel_facilites_icon_7.svg"> Air Condition</li>
+                                    <li><img class="img-responsive" src="./images/hotel_facilites_icon_9.svg"> Swimming Pool</li>
+                                    <li><img class="img-responsive" src="./images/hotel_facilites_icon_8.svg"> Hairdryer</li>
+                                </ul>
+                            </div>
                         </div>
+                        <hr>
+                        <div class="prices">
+                            <h3>Prices</h3>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <tbody>
+                                        <tr class="table-striped">
+                                            <td>Low (from 23/03 to 31/05)</td>
+                                            <td>140$</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Middle (from 23/03 to 31/05)</td>
+                                            <td>180$</td>
+                                        </tr>
+                                        <tr class="table-striped">
+                                            <td>High (from 23/03 to 31/05)</td>
+                                            <td>200$</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="loc">
+                            <h3>Location</h3>
+                        </div>
+                        <hr>
+                        <div id="reviews" class="rivz">
+                            <h3>Reviews</h3>
+                            <div class="row rivista">
+                                <div class="col-sm-3">
+                                    <div class="badge">
+                                        <strong>8.5</strong>
+                                        <em>Superb</em>
+                                        <small>Based on 4 reviews</small>
+                                    </div>
+                                </div>
+                                <div class="col-sm-9">
+                                    <div class="row rivista">
+                                        <div class="col-xs-10">
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-success"
+                                                    aria-valuemin="0" aria-valuemax="100" style="width:80%">  
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <small><strong>5 stars</strong></small>
+                                        </div>
+                                        <div class="col-xs-10">
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-success"
+                                                    aria-valuemin="0" aria-valuemax="100" style="width:90%">  
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <small><b>4 stars</b></small>
+                                        </div>
+                                        <div class="col-xs-10">
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-success"
+                                                    aria-valuemin="0" aria-valuemax="100" style="width:60%">  
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <small><b>3 stars</b></small>
+                                        </div>
+                                        <div class="col-xs-10">
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-success"
+                                                    aria-valuemin="0" aria-valuemax="100" style="width:30%">  
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <small><b>2 stars</b></small>
+                                        </div>
+                                        <div class="col-xs-10">
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-success"
+                                                    aria-valuemin="0" aria-valuemax="100" style="width:0%">  
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <small><b>1 stars</b></small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <img class="img-responsive" src="./images/avatar1.jpg">
+                                </div>
+                                <div class="col-sm-10 talk">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <p><em>Admin – April 03, 2016:</em></p>
+                                    <p>Sed eget turpis a pede tempor malesuada. Vivamus quis mi at leo pulvinar hendrerit.
+                                    Cum sociis natoque penatibus et magnis dis</p>
+                                </div>
+                                <div class="col-sm-2">
+                                    <img class="img-responsive" src="./images/avatar2.jpg">
+                                </div>
+                                <div class="col-sm-10 talk">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>    
+                                    <p><em>Ahsan – April 01, 2016:</em></p>
+                                    <p>Sed eget turpis a pede tempor malesuada. Vivamus quis mi at leo pulvinar hendrerit.
+                                    Cum sociis natoque penatibus et magnis dis</p>
+                                </div>
+                                <div class="col-sm-2">
+                                    <img class="img-responsive" src="./images/avatar3.jpg">
+                                </div>
+                                <div class="col-sm-10 talk">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>    
+                                    <p><em>Sara – March 31, 2016:</em></p>
+                                    <p>Sed eget turpis a pede tempor malesuada. Vivamus quis mi at leo pulvinar hendrerit.
+                                    Cum sociis natoque penatibus et magnis dis</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="lar">
+                            <h3>Leave a Review</h3>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <label>Name and Lastname *</label>
+                                            <input type="text" class="form-control input-lg">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-sm-6">
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <label for="email">Email *</label>
+                                            <input type="email" class="form-control input-lg">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-sm-6">
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <label>Rating</label>
+                                            <select class="form-control input-lg">
+                                                <option>1 (lowest)</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option selected>5 (medium)</option>
+                                                <option>6</option>
+                                                <option>7</option>
+                                                <option>8</option>
+                                                <option>9</option>
+                                                <option>10 (highest)</option>
+                                            </select>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-sm-12">
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <label>Your Review</label>
+                                            <textarea class="form-control" rows="6"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-sm-12">
+                                    <a class="btn" href="./detail.html">
+                                        <strong>Submit</strong>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>    
                     </div>
-                </aside>
-            </div>
+                    <aside class="col-sm-4">
+                        <div class="ascon">
+                            <div class="ascon1">
+                                <div class="price">
+                                    45&dollar;<sub> person</sub>
+                                </div>
+                                <div class="grade">
+                                    <span>Good<em> 350 Reviews</em></span>
+                                    <strong>7.0</strong>
+                                </div>
+                            </div>
+                            <div class="tilapia">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="When..">
+                                </div>
+                                <div class="form-group rmtp">
+                                    <select class="wide">
+                                        <option class="selected">Guests</option>
+                                        <option>Adults</option>	
+                                        <option>Children</option>
+                                    </select>
+                                </div>
+                                <div class="form-group rmtp">
+                                    <select class="wide">
+                                        <option>Room Type</option>	
+                                        <option>Single Room</option>
+                                        <option>Double Room</option>
+                                        <option>Suite Room</option>
+                                    </select>
+                                </div>
+                                </div>
+                            <div class="poshaz text-center">
+                                <a href="./checkout.html" class="btn">Purchase</a>
+                            </div>
+                            <div class="atwic text-center">
+                                <a href="#" class="btn"><i class="fa fa-heart"></i>Add to wishlist</a>
+                            </div>
+                            <h6 class="text-center">No money charged in this step</h6>
+                        </div>
+                        <div class="row">
+                            <div class="sts">
+                                <div class="col-xs-4">
+                                    <a href="fb.com" class="btn fb"><i class="fab fa-facebook"></i>Share</a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="twitter.com" class="btn tw"><i class="fab fa-twitter"></i>Tweet</a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="google.com/plus" class="btn gg"><i class="fab fa-google-plus"></i>Share</a>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </section>
         </div>
     </div>
     <div id="footer">
@@ -393,9 +442,9 @@
                     <div class="col-lg-3 col-md-3">
                         <ul class="list-unstyled">
                             <strong><h4>Contacts</h4></strong>
-                            <li>97845 Baker st. 567<br>Los Angeles - US</li>
-                            <li> +61 23 8093 3400 </li>
-                            <li><a href="#">info@sparker.com </a></li>
+                            <li><i class="fa fa-home"></i>  97845 Baker st. 567<br>Los Angeles - US</li>
+                            <li><i class="fa fa-headphones-alt"></i>  +61 23 8093 3400 </li>
+                            <li><a href="#"><i class="fa fa-info"></i>  info@sparker.com </a></li>
                         </ul>
                     </div>
                     <div class="col-lg-3 col-md-3">
@@ -412,11 +461,11 @@
                         </div>
                         <div class="fu">
                             <h4>Follow Us</h4>
-                            <a href="#">fb</a>
-                            <a href="#">twitter</a>
-                            <a href="#">google+</a>
-                            <a href="#">pinterest</a>
-                            <a href="#">instagram</a>
+                            <a href="fb.com"><i class="fab fa-2x fa-facebook"></i></a>
+                            <a href="twitter.com"><i class="fab fa-2x fa-twitter"></i></a>
+                            <a href="google.com"><i class="fab fa-2x fa-google-plus"></i></a>
+                            <a href="pinterest.com"><i class="fab fa-2x fa-pinterest"></i></a>
+                            <a href="instagram.com"><i class="fab fa-2x fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -453,4 +502,5 @@
             </div>
         </div>
     </div>
+    <div id="totop"><i class="fab fa-uparrow"></i></div>
 </body>

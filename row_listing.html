@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<head>
+    <title>Sparker List Row</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/row_listing.css">
+    <script src="../fontawesome/js/all.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/row_listing.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="co">
+            <div class="container">
+                <div class="navbar navbar-default">
+                    <div class="navbar-header">
+                        <a data-toggle="collapse" data-target="#menu" class="navbar-toggle collapsed navbar-left">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                        <a href="/">
+                            <img class="img-responsive" src="./images/logo_sticky.svg"/>
+                        </a>
+                    </div>
+                    <div id="menu" class="collapse navbar-collapse navbar-menu">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="index.html">Home</a>
+                            </li>
+                            <li><a href="detail.html">Details</a>
+                            </li>
+                            <li><a href="about.html">About</a>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Extras</a>
+                                <ul class="dropdown-menu dropdown-menu-left" role="menu" aria-labelledby="menu1">
+                                    <li role="presentation"><a role="menuitem" href="checkout.html">Checkout</a></li>
+                                    <li role="presentation"><a role="menuitem" href="row_listing.html">Row Listing</a></li>
+                                    <li role="presentation"><a role="menuitem" href="blog.html">Blog</a></li>
+                                    <li role="presentation"><a role="menuitem" href="account.html">Account</a></li>
+                                    <li role="presentation"><a role="menuitem" href="#">404 page</a></li>
+                                    <li role="presentation"><a role="menuitem" href="#">Contacts 2</a></li>
+                                    <li role="presentation"><a role="menuitem" href="#">Pricing Tables</a></li>
+                                    <li role="presentation"><a role="menuitem" href="#">Login</a></li>
+                                    <li role="presentation"><a role="menuitem" href="#">Register</a></li>
+                                    <li role="presentation"><a role="menuitem" href="#">Invoice</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>Buy Template</a>
+                            </li>
+                            <a class="btn btn-info navbar-btn navbar-right btn-md" href="#">
+                                <strong>Add Listing</strong>
+                            </a>
+                        </ul>               
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="content">
+        <div class="result">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h4><strong>145</strong> results for All listing</h4>
+                    </div>
+                    <div class="col-sm-3 it">                       
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="What are you looking for?...">
+                        </div>
+                    </div>
+                    <div class="col-sm-2 it">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Where?...">
+                        </div>                        
+                    </div>
+                    <div class="col-sm-2 it">
+                        <div class="form-group">
+                            <select class="form-control">
+                                <option selected>All Categories</option>
+                                <option>Shops</option>
+                                <option>Hotels</option>
+                                <option>Restaurants</option>
+                                <option>Bars</option>
+                                <option>Events</option>
+                            </select>
+                        </div>
+                    </div>                            
+                    <div class="col-sm-1 it">
+                        <div class="s">
+                            <a class="btn btn-info btn-md">
+                                <strong><i class="fa fa-search"></i></strong>
+                            </a>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+        <div class="mp">
+            <div class="container">
+                <div class="row">
+                    <a class="btn btn-md active mp1" href="./row_listing.html">
+                        <strong>All</strong>
+                    </a>
+                    <a class="btn btn-md mp1" href="./row_listing.html">
+                        <strong>Popular</strong>
+                    </a>
+                    <a class="btn btn-md mp1" href="./row_listing.html">
+                        <strong>Latest</strong>
+                    </a>
+                    <div class="pl">
+                        <a class="btn btn-md" href="#">
+                            <strong><i class="fa fa-location"></i>View on map</strong>
+                        </a>
+                        <div class="btn pl1">
+                            <a href="./row_listing.html"><i class="fa fa-th"></i></a>
+                            <a href="#"><i class="fa fa-th-list"></i></a>
+                            <a href="#"><i class="fa fa-map"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mc">
+            <div class="container">
+                <div class="row">
+                    <aside class="col-sm-3">
+                        <div class="filt">
+                            <a data-toggle="collapse" href="#collapseFilters">
+                                <h4>Filters</h4>        
+                            </a>
+                            <div class="collapse show" id="collapseFilters">
+                                <hr>
+                                <div class="filter_type">
+                                    <h6>Category</h6>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Restaurants<span class="badge"><small>43</small></label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Shops<span class="badge"><small>33</small></span></label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Bars<span class="badge"><small>12</small></span></label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Events<span class="badge"><small>44</small></span></label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div class="filter_type">
+                                    <h6>Distance</h6>
+                                    <p>Radius around selected destination <b class="text-primary">30</b> km</p>
+                                    <input type="range" min="10" max="100" step="10" value="30">
+                                    <div class="rangeslider">
+                                        <div class="rangeslider_fill"></div>
+                                        <div class="rangeslider_handle"></div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="filter_type">
+                                    <h6>Rating</h6>
+                                    <ul class="list-unstyled">    
+                                        <li>
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Superb 9+<span class="badge"><small>34</small></span></label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Very Good 8+<span class="badge"><small>21</small></span></label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Good 7+<span class="badge"><small>15</small></span></label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">Pleasant 6+<span class="badge"><small>34</small></span></label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                    <div class="col-sm-9">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="con">
+                                    <figure>
+                                        <a href="#" class="wish_bt"></a>
+                                        <a href="#">
+                                            <img class="img-responsive" src="./images/location_1.jpg">
+                                            <div class="rm text-center">
+                                                <span>read more</span>
+                                            </div>
+                                        </a>
+                                        <small>RESTAURANT</small>
+                                    </figure>
+                                    <div class="conc">
+                                        <a href="#">
+                                            <h3>Da Alfredo</h3>
+                                        </a>
+                                        <small><strong>27 Old Gloucester St</strong></small>
+                                        <p>Some wonderful restaurant along Admiralty way, Lekki, Lagos.</p>
+                                        <a class="address" href="#"><i class="fa fa-compass"></i>Get Directions</a>
+                                    </div>
+                                    <ul class="list-unstyled rivs">
+                                        <li><small>Now Open</small></li>
+                                        <li class="grade">
+                                            Superb<em> 350 views</em>
+                                            <span class="badge">8.9</span>
+                                        </li>
+                                    </ul>                        
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="con">
+                                    <figure>
+                                        <a href="#" class="wish_bt"></a>
+                                        <a href="#">
+                                            <img class="img-responsive" src="./images/location_2.jpg">
+                                            <div class="rm text-center">
+                                                <span>read more</span>
+                                            </div>
+                                        </a>
+                                        <small>BAR</small>
+                                    </figure>
+                                    <div class="conc">
+                                        <a href="#">
+                                            <h3>Limon Bar</h3>
+                                        </a>
+                                        <small><strong>438 Rush Green Road, Romford</strong></small>
+                                        <p>Great, great bar just in the heart of Kuto, Abeokuta.</p>
+                                        <a class="address" href="#"><i class="fa fa-compass"></i>Get Directions</a>
+                                    </div>
+                                    <ul class="list-unstyled rivs">
+                                        <li><small>Now Open</small></li>
+                                        <li class="grade">
+                                            Good<em> 350 views</em>
+                                            <span class="badge">7.0</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="con">
+                                    <figure>
+                                        <a href="#" class="wish_bt"></a>
+                                        <a href="#">
+                                            <img class="img-responsive" src="./images/location_3.jpg">
+                                            <div class="rm text-center">
+                                                <span>read more</span>
+                                            </div>
+                                        </a>
+                                        <small>SHOP</small>
+                                    </figure>
+                                    <div class="conc">
+                                        <a href="#">
+                                            <h3>Mary Boutique</h3>
+                                        </a>
+                                        <small><strong>43 Stephen Road, Bexleyheath</strong></small>
+                                        <p>Well stocked and quality wears at the best prices. Become your King today!</p>
+                                        <a class="address" href="#"><i class="fa fa-compass"></i>Get Directions</a>
+                                    </div>
+                                    <ul class="list-unstyled rivs">
+                                        <li><small class="nc">Now Closed</small></li>
+                                        <li class="grade">
+                                            Good<em> 350 views</em>
+                                            <span class="badge">7.0</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="con">
+                                    <figure>
+                                        <a href="#" class="wish_bt"></a>
+                                        <a href="#">
+                                            <img class="img-responsive" src="./images/location_4.jpg">
+                                            <div class="rm text-center">
+                                                <span>read more</span>
+                                            </div>
+                                        </a>
+                                        <small>BAR</small>
+                                    </figure>
+                                    <div class="conc">
+                                        <a href="#">
+                                            <h3>Garden Bar</h3>
+                                        </a>
+                                        <small><strong>40 Beechwood Road, Sanderstead</strong></small>
+                                        <p>Bar of greatness. Get nourished and enjoy some of the best drinks in the world while relaxing.</p>
+                                        <a class="address" href="#"><i class="fa fa-compass"></i>Get Directions</a>
+                                    </div>
+                                    <ul class="list-unstyled rivs">
+                                        <li><small class="nc">Now Closed</small></li>
+                                        <li class="grade">
+                                            Superb<em> 350 views</em>
+                                            <span class="badge">9.0</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="con">
+                                    <figure>
+                                        <a href="#" class="wish_bt"></a>
+                                        <a href="./detail.html">
+                                            <img class="img-responsive" src="./images/location_5.jpg">
+                                            <div class="rm text-center">
+                                                <span>read more</span>
+                                            </div>
+                                        </a>
+                                        <small>HOTEL</small>
+                                    </figure>
+                                    <div class="conc">
+                                        <a href="./detail.html">
+                                            <h3>Mariott Hotel</h3>
+                                        </a>
+                                        <small><strong>213 Malden Road, New Maiden</strong></small>
+                                        <p>Need a home away from home?, look no further!</p>
+                                        <a class="address" href="#"><i class="fa fa-compass"></i>Get Directions</a>
+                                    </div>
+                                    <ul class="list-unstyled rivs">
+                                        <li><small>Now Open</small></li>
+                                        <li class="grade">
+                                            Good<em> 350 views</em>
+                                            <span class="badge">7.5</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="con">
+                                    <figure>
+                                        <a href="#" class="wish_bt"></a>
+                                        <a href="#">
+                                            <img class="img-responsive" src="./images/location_6.jpg">
+                                            <div class="rm text-center">
+                                                <span>read more</span>
+                                            </div>
+                                        </a>
+                                        <small>EVENT</small>
+                                    </figure>
+                                    <div class="conc">
+                                        <a href="#">
+                                            <h3>Six Pistols</h3>
+                                        </a>
+                                        <small><strong>Coverdale Road, Willesden</strong></small>
+                                        <p>Enjoy the best of african music, and watch your favorite artise perform, And so much more</p>
+                                        <a class="address" href="#"><i class="fa fa-compass"></i>Get Directions</a>
+                                    </div>
+                                    <ul class="list-unstyled rivs">
+                                        <li><small>Now Open</small></li>
+                                        <li class="grade">
+                                            Good<em> 350 views</em>
+                                            <span class="badge">7.8</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lm text-center">
+                            <a class="btn btn-md" href="#">
+                                <strong>Load more</strong>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="container">
+            <div class="quiks">  
+                <div class="row">
+                    <div class="col-lg-3 col-md-3">
+                        <ul class="list-unstyled">
+                            <strong><h4>Quick Links</h4></strong>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Faq</a></li>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">My account</a></li>
+                            <li><a href="#">Create account</a></li>
+                            <li><a href="#">Contacts</a></li>
+                        </ul>                 
+                    </div>
+                    <div class="col-lg-3 col-md-3">
+                        <ul class="list-unstyled">
+                            <strong><h4>Categories</h4></strong>
+                            <li><a href="#">Shops</a></li>
+                            <li><a href="#">Hotels</a></li>
+                            <li><a href="#">Restaurants</a></li>
+                            <li><a href="#">Bars</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Fitness</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-3">
+                        <ul class="list-unstyled">
+                            <strong><h4>Contacts</h4></strong>
+                            <li><i class="fa fa-home"></i>  97845 Baker st. 567<br>Los Angeles - US</li>
+                            <li><i class="fa fa-headphones-alt"></i>  +61 23 8093 3400 </li>
+                            <li><a href="#"><i class="fa fa-info"></i>  info@sparker.com </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-3">
+                        <div class="kts">
+                            <strong><h4>Keep in touch</h4></strong>
+                            <form role="form">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your email">
+                                    <a href="#" class="btn btn-info btn-md">
+                                        <strong>Submit</strong>
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="fu">
+                            <h4>Follow Us</h4>
+                            <a href="fb.com"><i class="fab fa-2x fa-facebook"></i></a>
+                            <a href="twitter.com"><i class="fab fa-2x fa-twitter"></i></a>
+                            <a href="google.com"><i class="fab fa-2x fa-google-plus"></i></a>
+                            <a href="pinterest.com"><i class="fab fa-2x fa-pinterest"></i></a>
+                            <a href="instagram.com"><i class="fab fa-2x fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lang">
+                <hr>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <select>
+                            <option>English</option>
+                            <option>French</option>
+                            <option>Sanish</option>
+                            <option>Russian</option>
+                            <option selected>Yoruba</option>
+                        </select>
+                        <select>
+                            <option>US Dollars &dollar;</option>
+                            <option>British Pound &pound;</option>
+                            <option>Euro &euro;</option>
+                            <option selected>Naira #</option>
+                        </select>
+                        <div class="vis">
+                            <img src="./images/cards_all.svg">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 col-md-6">
+                        <div class="tac">
+                            <small><a href="#">Terms and conditions</a></small>
+                            | <small><a href="#">Privacy</a></small>
+                            |  <small>&copy 2019 SPARKER</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width initial-scale=1">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/index.css">
+    <script src="../fontawesome/js/all.js"></script>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script src= "js/index.js" ></script>
 </head>
 <body>
     <div id="header">
@@ -19,21 +21,23 @@
                         <span class="icon-bar"></span>
                     </a>
                     <a href="/">
-                        <img class="img-responsive" src="./images/logo_sticky.svg"/>
+                        <img class="img-responsive" src="./images/logo.svg"/>
                     </a>
                 </div>
                 <div id="menu" class="collapse navbar-collapse navbar-menu">
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="dropdown"><a class="dropdown-toggle" href="index.html">Home</a>
+                            <li><a href="index.html">Home</a>
                             </li>
-                            <li class="dropdown"><a class="dropdown-toggle" href="detail.html">Details</a>
+                            <li><a href="detail.html">Details</a>
                             </li>
-
-                            <li class="dropdown"><a class="dropdown-toggle" href="about.html">About</a>
+                            <li><a href="about.html">About</a>
                             </li>
-
                             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Extras</a>
                                 <ul class="dropdown-menu dropdown-menu-left" role="menu" aria-labelledby="menu1">
+                                    <li role="presentation"><a role="menuitem" href="checkout.html">Checkout</a></li>
+                                    <li role="presentation"><a role="menuitem" href="row_listing.html">Row Listing</a></li>
+                                    <li role="presentation"><a role="menuitem" href="blog.html">Blog</a></li>
+                                    <li role="presentation"><a role="menuitem" href="account.html">Account</a></li>
                                     <li role="presentation"><a role="menuitem" href="#">404 page</a></li>
                                 </ul>
                             </li>
@@ -97,40 +101,48 @@
                         <span></span>
                         <h2><strong>Famous Shops</strong></h2>
                         <p>Take a look at some of the worlds most famous shops. From Shoprite in Ibadan, Nigeria, to Asos in Toronto, Canada!</p>
-                        <a href="/">See all &LongRightArrow;</a>
+                        <a href="./row_listing.html">See all &LongRightArrow;</a>
                     </div>
                     <div class="pics">
                         <div class="row">
                             <div class="col-lg-3 col-md-3 col-sm-6">
                                 <a href="/">
-                                    <img class="img-responsive" src="./images/shop_1.jpg" alt="Victoria Secretes">
-                                    <div class="info">
-                                        <h5>Victoria Secretes</h5>
-                                    </div>
+                                    <figure>
+                                        <img class="img-responsive" src="./images/shop_1.jpg" alt="Victoria Secretes">
+                                        <div class="info">
+                                            <h5>Victoria Secretes</h5>
+                                        </div>
+                                    </figure>
                                 </a>
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-6">
                                 <a href="/">
-                                    <img class="img-responsive" src="./images/shop_2.jpg" alt="Louis Vuitton">
-                                    <div class="info">
-                                        <h5>Louis Vuitton</h5>
-                                    </div>
+                                    <figure>
+                                        <img class="img-responsive" src="./images/shop_2.jpg" alt="Louis Vuitton">
+                                        <div class="info">
+                                            <h5>Louis Vuitton</h5>
+                                        </div>
+                                    </figure>
                                 </a>
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-6">
                                 <a href="/">
-                                    <img class="img-responsive" src="./images/shop_3.jpg" alt="Burberry">
-                                    <div class="info">
-                                        <h5>Burberry</h5>
-                                    </div>
+                                    <figure>
+                                        <img class="img-responsive" src="./images/shop_3.jpg" alt="Burberry">
+                                        <div class="info">
+                                            <h5>Burberry</h5>
+                                        </div>
+                                    </figure>
                                 </a>
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-6">
                                 <a href="/">
-                                    <img class="img-responsive" src="./images/shop_4.jpg" alt="Pinko">
-                                    <div class="info">
-                                        <h5>Pinko</h5>
-                                    </div>
+                                    <figure>
+                                        <img class="img-responsive" src="./images/shop_4.jpg" alt="Pinko">
+                                        <div class="info">
+                                            <h5>Pinko</h5>
+                                        </div>
+                                    </figure>
                                 </a>
                             </div>
                         </div>
@@ -139,40 +151,64 @@
                         <span></span>
                         <h2><strong>Popular Hotels</strong></h2>
                         <p>Take a look at some of the worlds most popular hotels. From Sheraton in Abuja, Nigeria, to The Lowry in Manchester, UK!</p>
-                        <a href="/">See all &LongRightArrow;</a>
+                        <a href="./row_listing.html">See all &LongRightArrow;</a>
                     </div>
                     <div class="pics">
                         <div class="row">
                             <div class="col-lg-3 col-md-3 col-sm-6">
-                                <a href="/">
-                                    <img class="img-responsive" src="./images/hotel_1.jpg" alt="Hotel Mariott">
-                                    <div class="info">
-                                        <h5>&starf;&starf;&bigstar;&starf; Hotel Mariott</h5>
-                                    </div>
+                                <a href="./detail.html">
+                                    <figure>
+                                        <img class="img-responsive" src="./images/hotel_1.jpg" alt="Hotel Mariott">
+                                        <div class="info">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <h5>Hotel Mariott</h5>
+                                        </div>
+                                    </figure>
                                 </a>
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-6">
                                 <a href="/">
-                                    <img class="img-responsive" src="./images/hotel_2.jpg" alt="Hotel Concorde">
-                                    <div class="info">
-                                        <h5>&starf;&starf;&bigstar;&starf; Hotel Concorde</h5>
-                                    </div>
+                                    <figure>
+                                        <img class="img-responsive" src="./images/hotel_2.jpg" alt="Hotel Concorde">
+                                        <div class="info">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <h5>Hotel Concorde</h5>
+                                        </div>
+                                    </figure>
                                 </a>
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-6">
                                 <a href="/">
-                                    <img class="img-responsive" src="./images/hotel_3.jpg" alt="Hotel La Defanse">
-                                    <div class="info">
-                                        <h5>&starf;&starf;&bigstar;&starf; Hotel La Defanse</h5>
-                                    </div>
+                                    <figure>
+                                        <img class="img-responsive" src="./images/hotel_3.jpg" alt="Hotel La Defanse">
+                                        <div class="info">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <h5>Hotel La Defanse</h5>
+                                        </div>
+                                    </figure>
                                 </a>
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-6">
                                 <a href="/">
-                                    <img class="img-responsive" src="./images/hotel_4.jpg" alt="Hotel Carlton">
-                                    <div class="info">
-                                        <h5>&starf;&starf;&bigstar;&starf; Hotel Carlton</h5>
-                                    </div>
+                                    <figure>
+                                        <img class="img-responsive" src="./images/hotel_4.jpg" alt="Hotel Carlton">
+                                        <div class="info">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <h5>Hotel Carlton</h5>
+                                        </div>
+                                    </figure>
                                 </a>
                             </div>
                         </div>
@@ -181,40 +217,48 @@
                         <span></span>
                         <h2><strong>Top Restaurants</strong></h2>
                         <p>Take a look at some of the worlds most iconic restaurants. From Sweet Sensation in Lagos, Nigeria, to KFC in Kentucky, USA!</p>
-                        <a href="/">See all &LongRightArrow;</a>
+                        <a href="./row_listing.html">See all &LongRightArrow;</a>
                     </div>
                     <div class="pics">
                         <div class="row">
                             <div class="col-lg-3 col-md-3 col-sm-6">
                                 <a href="/">
-                                    <img class="img-responsive" src="./images/restaurant_1.jpg" alt="Da Alfredo">
-                                    <div class="info">
-                                        <h5>Da Alfredo</h5>
-                                    </div>
+                                    <figure>
+                                        <img class="img-responsive" src="./images/restaurant_1.jpg" alt="Da Alfredo">
+                                        <div class="info">
+                                            <h5>Da Alfredo</h5>
+                                        </div>
+                                    </figure>
                                 </a>
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-6">
                                 <a href="/">
-                                    <img class="img-responsive" src="./images/restaurant_2.jpg" alt="Bisroter">
-                                    <div class="info">
-                                        <h5>Bistroter</h5>
-                                    </div>
+                                    <figure>
+                                        <img class="img-responsive" src="./images/restaurant_2.jpg" alt="Bisroter">
+                                        <div class="info">
+                                            <h5>Bistroter</h5>
+                                        </div>
+                                    </figure>
                                 </a>
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-6">
                                 <a href="/">
-                                    <img class="img-responsive" src="./images/restaurant_3.jpg" alt="Da Luigi">
-                                    <div class="info">
-                                        <h5>Da Luigi</h5>
-                                    </div>
+                                    <figure>
+                                        <img class="img-responsive" src="./images/restaurant_3.jpg" alt="Da Luigi">
+                                        <div class="info">
+                                            <h5>Da Luigi</h5>
+                                        </div>
+                                    </figure>
                                 </a>
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-6">
                                 <a href="/">
-                                    <img class="img-responsive" src="./images/restaurant_4.jpg" alt="Marco King">
-                                    <div class="info">
-                                        <h5>Marco King</h5>
-                                    </div>
+                                    <figure>
+                                        <img class="img-responsive" src="./images/restaurant_4.jpg" alt="Marco King">
+                                        <div class="info">
+                                            <h5>Marco King</h5>
+                                        </div>
+                                    </figure>
                                 </a>
                             </div>
                         </div>
@@ -226,19 +270,22 @@
             <div class="container">
                 <div class="hiw2">
                     <span><em></em></span>
-                    <h3>How it Works!</h3>
+                    <h2>How it Works!</h2>
                     <p>Let's take you through how this works.</p>
                     <div class="row">
                         <div class="col-lg-4 col-md-4 col-sm-4">
-                            <h5>Search Locations</h5>
+                            <i class="fa fa-3x fa-search"></i>
+                            <h4>Search Locations</h4>
                             <p>We give you locations to places with the best offer depending on your budget and shi... unamean?</p>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4">
-                            <h5>View Location Info</h5>
+                            <i class="fa fa-3x fa-info"></i>
+                            <h4>View Location Info</h4>
                             <p>You get to check out the location given and make a decision on which suits you best as regards what you looking for!</p>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4">
-                            <h5>Book, Reach or Call</h5>
+                            <i class="fa fa-3x fa-thumbs-up"></i>
+                            <h4>Book, Reach or Call</h4>
                             <p>Depending on your choice of location, you're able to book, make a reservation, reach out to staffs or call if necessary.</p>
                         </div>
                     </div>
@@ -297,9 +344,9 @@
                     <div class="col-lg-3 col-md-3">
                         <ul class="list-unstyled">
                             <strong><h4>Contacts</h4></strong>
-                            <li>97845 Baker st. 567<br>Los Angeles - US</li>
-                            <li> +61 23 8093 3400 </li>
-                            <li><a href="#">info@sparker.com </a></li>
+                            <li><i class="fa fa-home"></i>  97845 Baker st. 567<br>Los Angeles - US</li>
+                            <li><i class="fa fa-headphones-alt"></i>  +61 23 8093 3400 </li>
+                            <li><a href="#"><i class="fa fa-info"></i>  info@sparker.com </a></li>
                         </ul>
                     </div>
                     <div class="col-lg-3 col-md-3">
@@ -316,11 +363,11 @@
                         </div>
                         <div class="fu">
                             <h4>Follow Us</h4>
-                            <a href="#">fb</a>
-                            <a href="#">twitter</a>
-                            <a href="#">google+</a>
-                            <a href="#">pinterest</a>
-                            <a href="#">instagram</a>
+                            <a href="fb.com"><i class="fab fa-2x fa-facebook"></i></a>
+                            <a href="twitter.com"><i class="fab fa-2x fa-twitter"></i></a>
+                            <a href="google.com"><i class="fab fa-2x fa-google-plus"></i></a>
+                            <a href="pinterest.com"><i class="fab fa-2x fa-pinterest"></i></a>
+                            <a href="instagram.com"><i class="fab fa-2x fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -357,4 +404,5 @@
             </div>
         </div>
     </div>
+    <div id="totop"><i class="fab fa-uparrow"></i></div>
 </body>
